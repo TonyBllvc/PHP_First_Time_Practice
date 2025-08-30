@@ -6,5 +6,6 @@
     "files.autoSaveWhenNoErrors": true,
     "files.autoSaveWorkspaceFilesOnly": false,
     "files.autoGuessEncoding": true,
-    "editor.formatOnPaste": true
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
 }

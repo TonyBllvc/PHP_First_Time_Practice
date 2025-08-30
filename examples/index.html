@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+
+        // Non primitive data types
+        // Assignment 1: This assignment should be carried out in a Javascript file(and ensure it show on the browser console).
+
+        // Assignment 2
+        // This is an object, which contains multiple levels of object properties
+        let person = {
+            name: "John",
+            age: 30,
+            city: "New York",
+            country: ["USA", "Canada", "Mexico", "UK"],
+            bio: {
+                profession: "Software Developer",
+                favoriteFood: {
+                    breakfast: "Omelette",
+                    lunch: "Pizza",
+                    dinner: "Sushi"
+                },
+                hobbies: ["Reading", "Traveling", "Gaming", { name: "Cooking", level: "Intermediate", movieIndustry: ['Action', 'Drama'] }]
+            }
+        };
+
+        // 1. Access the following values(data sets) within the object and log them on your browser console for me:
+        console.log(person.name) // John (this is an example)
+        console.log(person.country[2]) // Mexico (this is an example)
+        console.log() // Sushi
+        console.log() // Traveling
+        console.log() // Software Developer
+        console.log() // Omelette
+        console.log() // Cooking
+        console.log() // Intermediate
+        console.log() // Action
+        console.log() // Drama
+
+        // Assignment 3
+        // Identify the object in the following:
+        // a:
+        let happy = {
+            feeling: "happy",
+            intensity: "high",
+            duration: "short-term"
+        }
+
+        // b:
+        let sad = {
+            "feeling": "happy",
+            "intensity": "high",
+            "duration": "short-term"
+        }
+
+
+        // c:
+        let vexed = [
+            "feeling", "happy",
+            "intensity", "high",
+            "duration", "short-term"
+        ]
+
+        // Assignment 4
+        // Tell me what type of datatype is contained with this array:
+        let slope = [
+            0, // Number
+            '1',
+            ['loop', 'yes', 10],
+            true,
+            null,
+            { name: 'JS', isFun: true }
+        ]
+
+
+        // Assignment 5
+        // Identify the issues with the following (debug):
+        // a: (This is suppose to be an array)
+        let play: { 'help', loop, fifty7, Null, UNDEfined }
+
+        // b: (This is suppose to be an object)
+        let play = [
+            "help": true,
+            loop: false,
+            fifty7: 57,
+            Null, null,
+            UNDEfined; undefined
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
