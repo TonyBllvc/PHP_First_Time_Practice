@@ -44,6 +44,18 @@
             echo "6. NULL Variable Type: " . var_dump($nullVar) . "<br> <br/>";
             echo "7. Resource Variable Type: " . var_dump($resourceVar) . "<br> <br/>";
 
+            // there is one more datatype:
+            class Car {
+                public $color;
+                public $make;
+        
+                public function drive() {
+                    echo "The " . $this->color . " " . $this->make . " is driving.";
+                }
+            }
+        
+            // $myCar = new Car(); // Instantiating an object of the Car class
+
     ?>
 
 </h4>

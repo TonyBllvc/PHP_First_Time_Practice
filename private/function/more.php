@@ -101,12 +101,13 @@
         // In the following example we try to send both a number and a string to the function without using strict:
 
         // Example
-        echo "<br />";
+        // echo "<br />";
 
-        function addNumbers(int $a, int $b) { // Find out why this code is not working ...
-          return $a + $b;
-        }
-        echo addNumbers(5, "5 days");
+        // function addNumbers(int $a, int $b) { // Find out why this code is not working ...
+        //   return $a + $b;
+        // }
+        // echo addNumbers(5, "5 days");
+
         // since strict is NOT enabled "5 days" is changed to int(5), and it will return 10 ...
         // ... but it is not working as such for some reason
         
