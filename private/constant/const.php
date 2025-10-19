@@ -19,6 +19,7 @@
             // Example One:
                 const MY_CONSTANT = 5;
                 echo MY_CONSTANT . "<br />";
+                
             // Example Two:
             
                 class MyClass {

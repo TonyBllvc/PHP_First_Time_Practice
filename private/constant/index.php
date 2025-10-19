@@ -19,10 +19,13 @@
             - A valid constant name starts with a letter or underscore (no $ sign before the constant name).
             - Note: Unlike variables, constants are automatically global across the entire script.
 
+            We have two types:
+                i: const 
+                ii: define()
     */
 
-            // Create a PHP Constant
-            // To create a constant, use the define() function.
+            // Create a PHP "Define" Constant
+            // To create a define constant, we use the define() function.
             // Syntax: define(name, value);
 
             // Where Parameters are:
@@ -34,7 +37,8 @@
             define("SITE_URL", "https://www.myawesomesite.com");
             echo SITE_NAME . '<br />';
             echo SITE_URL . '<br />';
-
+            
+            // Create a PHP "const" Constant
             // PHP const Keyword
             // You can also create a constant by using the const keyword.
             const MYCAR = "Volvo";
