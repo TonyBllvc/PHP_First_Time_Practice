@@ -19,19 +19,19 @@
             protected $number = 0;
           }
           
-          class AnotherClass extends MyClass {
-            public function add1() {
-              $this->number++;
-            }
-          
-            public function getNumber() {
-              return $this->number;
-            }
+        class AnotherClass extends MyClass {
+          public function add1() {
+            $this->number++;
           }
-          
-          $obj = new AnotherClass();
-          $obj->add1();
-          echo "The number is " . $obj->getNumber();
+        
+          public function getNumber() {
+            return $this->number;
+          }
+        }
+        
+        $obj = new AnotherClass();
+        $obj->add1();
+        echo "The number is " . $obj->getNumber();
           
     ?>
     
