@@ -22,6 +22,10 @@
             We have two types:
                 i: const 
                 ii: define()
+
+            const vs. define()
+            -- const cannot be created inside another block scope, like inside a function or inside an if statement. Except a class instance.
+            -- define() can be created inside another block scope.
     */
 
             // Create a PHP "Define" Constant
