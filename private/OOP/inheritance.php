@@ -139,7 +139,7 @@
               $this->weight = $weight;
             }
             public function intro() {
-              echo "The fruit is {$this->name}, the color is {$this->color}, and the weight is {$this->weight} gram.  <br />";
+              echo "The fruit is $this->name, the color is $this->color, and the weight is $this->weight gram.  <br />";
             }
           }
           

@@ -77,8 +77,69 @@
 
         $citroen = new citroen("Citroen");
         echo $citroen->intro();
+        echo "<br>";
 
+        // Example Explained
+        // The Audi, Volvo, and Citroen classes are inherited from the Car class. This means that the Audi, Volvo, and Citroen classes can use the public $name property as well as the public __construct() method from the Car class because of inheritance.
 
+        // But, intro() is an abstract method that should be defined in all the child classes and they should return a string.
+
+        // ____ PHP - More Abstract Class Examples _____
+        // Let's look at another example where the abstract method has an argument:
+
+        abstract class ParentClassExampleOne {
+          // Abstract method with an argument
+          abstract protected function prefixName($name);
+        }
+        
+        class ChildClassExampleOne extends ParentClassExampleOne {
+          public function prefixName($name) {
+            if ($name == "John Doe") {
+              $prefix = "Mr.";
+            } elseif ($name == "Jane Doe") {
+              $prefix = "Mrs.";
+            } else {
+              $prefix = "";
+            }
+            return "{$prefix} {$name}";
+          }
+        }
+        
+        $class = new ChildClassExampleOne;
+        echo $class->prefixName("John Doe");
+        echo "<br>";
+        echo $class->prefixName("Jane Doe");
+        
+
+        // Let's look at another example where the abstract method has an argument, and the child class has two optional arguments that are not defined in the parent's abstract method:
+
+        // Example:
+        abstract class ParentClassExampleTwo {
+          // Abstract method with an argument
+          abstract protected function prefixName($name);
+        }
+
+        class ChildClassExampleTwo extends ParentClassExampleTwo {
+          // The child class may define optional arguments that are not in the parent's abstract method
+          public function prefixName($name, $separator = ".", $greet = "Dear") {
+            if ($name == "John Doe") {
+              $prefix = "Mr";
+            } elseif ($name == "Jane Doe") {
+              $prefix = "Mrs";
+            } else {
+              $prefix = "";
+            }
+            return "{$greet} {$prefix}{$separator} {$name}";
+          }
+        }
+
+        $class = new ChildClassExampleTwo;
+        echo $class->prefixName("John Doe");
+        echo "<br>";
+        echo $class->prefixName("Jane Doe");
+        echo "<br>";
+        echo $class->prefixName("Jane");
+        echo "<br />";
     ?>
     
 </body>
