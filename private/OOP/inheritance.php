@@ -40,6 +40,7 @@
             }
           }
           $strawberry = new StrawberryOne("Strawberry", "red");
+          // $strawberry->name; // Accessing inherited property
           $strawberry->message(); // Call the message() method from the Strawberry class
           $strawberry->intro(); // Call the intro() method from the Strawberry class derived from FruitNine class
           
