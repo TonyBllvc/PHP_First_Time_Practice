@@ -7,7 +7,11 @@
 </head>
 <body>
 
-    <!-- 
+    <!--
+
+    NOTE: Not to be displayed. To display, go to "./display" folder
+        The PHP superglobals $_GET and $_POST are used to collect form-data.
+
         Think SECURITY when processing PHP forms!
 
         This page does not contain any form validation, it just shows how you can send and retrieve form data.
@@ -16,6 +20,7 @@
     -->
 
     <form action="welcome_post.php" method="POST">
+        <h1> Using the POST method</h1>
     Name: <input type="text" name="name"><br>
     E-mail: <input type="text" name="email"><br>
     <input type="submit">
@@ -37,6 +42,7 @@
     -->
     
     <form action="welcome_get.php" method="GET">
+        <h1> Using the GET method</h1>
         Name: <input type="text" name="name"><br>
         E-mail: <input type="text" name="email"><br>
         <input type="submit">
