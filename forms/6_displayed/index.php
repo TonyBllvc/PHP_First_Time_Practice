@@ -11,6 +11,7 @@ function test_input($data) {
  // define variables and set to empty values
  $nameErr = $emailErr = $genderErr = $websiteErr = "";
  $name = $email = $gender = $comment = $website = "";
+ $success_message = "";
  
  if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["name"])) {
@@ -57,7 +58,8 @@ function test_input($data) {
     } else {
       $gender = test_input($_POST["gender"]);
     }
-
+    
+    $success_message = "Form successfully filled";
   }
 ?>
 
@@ -75,6 +77,9 @@ function test_input($data) {
             font-size: 30px;
         }
 
+        .success{
+            color: green;
+        }
     </style>
 </head>
 <body>
@@ -106,6 +111,10 @@ function test_input($data) {
         <input type="submit" name="submit" value="Submit">
         
     </form>
+
+    <h1 class='success'>
+        <?php echo $success_message; ?>
+    </h1>
 
 
 </body>
