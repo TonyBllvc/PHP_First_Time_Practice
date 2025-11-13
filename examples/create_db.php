@@ -12,6 +12,14 @@
    $username = "your_username";
    $password = "your_password";
 
+   
+    // Create connection(just in case the first one does not work)
+    // $conn = mysqli_connect($servername, $username, $password);
+    
+    // // Check connection
+    // if (!$conn) {
+    //   die("Connection failed: " . mysqli_connect_error());
+    // }   
    // Create connection
    $conn = new mysqli($servername, $username, $password);
 
@@ -19,6 +27,7 @@
    if ($conn->connect_error) {
        die("Connection failed: " . $conn->connect_error);
    }
+
    echo "Connected successfully";
    
     //   Create a Database: Execute a CREATE DATABASE SQL query using your established connection. 
