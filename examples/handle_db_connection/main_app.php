@@ -1,5 +1,5 @@
 <?php
-include 'db_setup.php'; // This runs the checks and creates if needed; $conn is now available
+include 'tutorial/handle_db_connection/db_setup.php'; // This runs the checks and creates if needed; $conn is now available
 
 // Now use $conn for your queries, e.g., inserting a user
 // $stmt = $conn->prepare("INSERT INTO users (name, password, email) VALUES (?, ?, ?)");
