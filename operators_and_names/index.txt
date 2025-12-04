@@ -1,0 +1,55 @@
+
+
+###  Null Coalescing Operator.
+-:   ??
+-:   This operator is used to provide a default value if a variable is null or undefined. It offers a more concise way to achieve what previously required using the isset() function with the ternary operator.
+-:   EG:
+    <?php
+        $name = $_GET['user'] ?? 'Guest';
+        echo $name;
+    ?>
+
+### Object Operator
+-:   -> 
+-:   It is used to access properties and methods of an object. While its formal name is the object operator, many developers also refer to it informally as the "arrow operator" or simply "arrow." 
+-:   EG:   
+
+    <?php
+        class MyClass {
+            public $property = "Hello";
+
+            public function myMethod() {
+                return "World";
+            }
+        }
+
+        $obj = new MyClass();
+        echo $obj->property; // Accessing a property
+        echo $obj->myMethod(); // Calling a method
+    ?>
+
+
+
+### Scope Resolution Operator or "Paamayim Nekudotayim,"
+-:    ::
+-:    This operator is used to access static members (properties and methods) of a class, as well as constants defined within a class, without needing to create an instance of that class. It can also be used to refer to the current class (self::), the parent class (parent::), or the called class (static::) in the context of inheritance and late static binding.
+-:    EG:
+       <?php
+            class MyClass {
+                const MY_CONSTANT = 'A constant value';
+                public static $staticProperty = 'A static property value';
+
+                public static function staticMethod() {
+                    echo "This is a static method.";
+                }
+            }
+
+            // Accessing a constant
+            echo MyClass::MY_CONSTANT; // Output: A constant value
+
+            // Accessing a static property
+            echo MyClass::$staticProperty; // Output: A static property value
+
+            // Calling a static method
+            MyClass::staticMethod(); // Output: This is a static method.
+        ?>
